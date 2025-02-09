@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login & Register</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="">
+                <h1>Crie uma conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class="bx bxl-google"></i></a>
+                    <a href="#" class="icons"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="icons"><i class="bx bxl-github"></i></a>
+                    <a href="#" class="icons"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <span>Registre com e-mail</span>
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Digite o e-mail">
+                <input type="password" placeholder="Digite a senha">
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form action="">
+                <h1>Entre na sua conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class="bx bxl-google"></i></a>
+                    <a href="#" class="icons"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="icons"><i class="bx bxl-github"></i></a>
+                    <a href="#" class="icons"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <span>Login com e-mail e senha</span>
+                <input type="text" placeholder="Digite o e-mail">
+                <input type="password" placeholder="Digite a senha">
+                <a href="#">Esquece a senha?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem vindo ao <br>Code with Patel</h1>
+                    <p>Entre com ID e senha</p>
+                    <button class="hiden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Olá programadores!</h1>
+                    <p>Junte-se ao "Code with Patel" para desenvolver suas habilidades.</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
