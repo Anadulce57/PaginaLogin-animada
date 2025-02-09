@@ -5,6 +5,12 @@
     font-family: "Montserrat", sans-serif;
 }
 
+:root {
+    --color-link: #333;
+    --color-button:#FF0D0D;
+    --color-input: #EEEE;
+}
+
 body{
     background-color: rgba(0, 0, 0, 0.795);
     display: flex;
@@ -16,11 +22,69 @@ body{
 
 .container{
     background-color: white;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    width: 48rem;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 30rem;
+}
+
+.container p{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.3px;
+    margin: 1.25rem 0;
+}
+
+.container span{
+    font-size: 0.75rem;
+}
+
+.container a{
+    color: var(--color-link);
+    font-size: 0.813rem;
+    text-decoration: none;
+    margin: 0.938rem 0 0.625rem;
+}
+
+.container button{
+    background-color: var(--color-button);
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.625rem 2.813rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 0.625rem;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: white;
+}
+
+.container form{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    height: 100%;
+}
+
+.container input{
+    background-color: var(--color-input);
+    border: none;
+    margin: 0.5rem 0;
+    padding: 0.625rem 0.938rem;
+    font-size: 0.813rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    outline: none;
 }
