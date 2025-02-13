@@ -1,15 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
-
-:root {
-    --color-link: #333;
-    --color-button:#FF0D0D;
-    --color-input: #EEEE;
-    --color-border: #CCC;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -22,70 +17,70 @@ body{
 }
 
 .container{
-    background-color: white;
-    border-radius: 1.875rem;
+    background-color: #fff;
+    border-radius: 30px;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
     position: relative;
     overflow: hidden;
-    width: 48rem;
+    width: 768px;
     max-width: 100%;
-    min-height: 30rem;
+    min-height: 480px;
 }
 
 .container p{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.3px;
-    margin: 1.25rem 0;
+    margin: 20px 0;
 }
 
 .container span{
-    font-size: 0.75rem;
+    font-size: 12px;
 }
 
 .container a{
-    color: var(--color-link);
-    font-size: 0.813rem;
+    color: #333;
+    font-size: 13px;
     text-decoration: none;
-    margin: 0.938rem 0 0.625rem;
+    margin: 15px 0 10px;
 }
 
 .container button{
-    background-color: var(--color-button);
-    color: white;
-    font-size: 0.75rem;
-    padding: 0.625rem 2.813rem;
+    background-color: rgb(255, 13, 13);
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
     border: 1px solid transparent;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 0.625rem;
+    margin-top: 10px;
     cursor: pointer;
 }
 
 .container button.hidden{
     background-color: transparent;
-    border-color: white;
+    border-color: #fff;
 }
 
 .container form{
-    background-color: white;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 2.5rem;
+    padding: 0 40px;
     height: 100%;
 }
 
 .container input{
-    background-color: var(--color-input);
-    border: none;
-    margin: 0.5rem 0;
-    padding: 0.625rem 0.938rem;
-    font-size: 0.813rem;
-    border-radius: 0.5rem;
+    background-color: #eee;
+    border:none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
     width: 100%;
     outline: none;
 }
@@ -114,7 +109,7 @@ body{
     z-index: 1;
 }
 
-container.active .sign-up{
+.container.active .sign-up{
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -133,18 +128,18 @@ container.active .sign-up{
 }
 
 .social-icons{
-    margin: 1.25rem 0;
+    margin: 20px 0;
 }
 
 .social-icons a{
-    border: 1px solid var(--color-border);
+    border: 1px solid #ccc;
     border-radius: 20%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0.188rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
 }
 
 .toggle-container{
@@ -155,25 +150,25 @@ container.active .sign-up{
     height: 100%;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
-    border-radius: 1.25rem;
+    border-radius: 20px;
     z-index: 1000;
 }
 
 .container.active .toggle-container{
     transform: translateX(-100%);
-    border-radius: 1.25rem;
+    border-radius: 20px;
 }
 
 .toggle{
     background-color: rgba(255, 4, 4, 0.952);
     height: 100%;
-    color:white;
+    color: #fff;
     position: relative;
     left: -100%;
     height: 100%;
     width: 200%;
     transform: translateX(0);
-    transition: all 0.6 ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 .container.active .toggle{
@@ -188,7 +183,7 @@ container.active .sign-up{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 1.875rem;
+    padding: 0 30px;
     text-align: center;
     top: 0;
     transform: translateX(0);
